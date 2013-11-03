@@ -64,6 +64,11 @@ var pasteEvent = function(e) {
         // puts trial time difference
         data.trial_difference = eventdiff;
 
+        // puts the block number
+        if (vD.tasks.block!=null) {
+            data.block = vD.tasks.block;
+        }
+
         // put it in log
         log(data);
         //console.log(logdata);
@@ -79,6 +84,9 @@ var copyEvent = function(e) {
 
 var nextTask = function(e) {
     console.log(e);
+
+    //
+
     resetZ_order();
     removeHighlightText();
     highlightText(getCurrentStimuli());    
@@ -87,6 +95,8 @@ var nextTask = function(e) {
 var dataSaved = function(e) {
     console.log(e);
 }
+
+
 
 
 /*
