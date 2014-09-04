@@ -85,12 +85,8 @@ var copyEvent = function(e) {
 var nextTask = function(e) {
     console.log(e);
 
-<<<<<<< HEAD
-    //
-
-=======
     // reset the z-order of the windows
->>>>>>> efbbc99e8dd47ed20ea69d3ac8a5cc995f8e9666
+
     resetZ_order();
 
     // remove highlight text
