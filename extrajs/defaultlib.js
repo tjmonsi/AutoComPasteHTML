@@ -10,7 +10,7 @@
 var copyflag = false
 
 var pasteEvent = function(e) {
-    console.log(e);
+    //console.log(e);
     // this gets today's date and time
     var thisevent = new Date();
 
@@ -69,6 +69,7 @@ var pasteEvent = function(e) {
             data.block = vD.tasks.block;
         }
 
+		//console.log(data);
         // put it in log
         log(data);
         //console.log(logdata);
@@ -77,14 +78,16 @@ var pasteEvent = function(e) {
 }
 
 var copyEvent = function(e) {
-    console.log(e);
+    //console.log(e);
     copyflag = true
 
 }
 
 var nextTask = function(e) {
-    console.log(e);
+    //console.log(e);
 
+	
+    //
     // reset the z-order of the windows
 
     resetZ_order();
